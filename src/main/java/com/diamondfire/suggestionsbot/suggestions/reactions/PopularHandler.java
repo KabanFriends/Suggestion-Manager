@@ -16,7 +16,7 @@ public class PopularHandler {
         new SingleQueryBuilder().query("SELECT COUNT(*) AS recents FROM suggestions WHERE popular_message > 0 " +
                         "AND date > CURRENT_TIMESTAMP - INTERVAL 2 WEEK;")
                 .onQuery((set) -> {
-                    ratio = BotConstants.MIN_RATIO + (int) set.getInt("recents"));
+                    ratio = BotConstants.MIN_RATIO + (int) set.getInt("recents");
                     ratio = Math.max(BotConstants.MIN_RATIO, Math.min(ratio, BotConstants.MAX_RATIO));
                 }).execute();
         BotInstance.getJda().getPresence().setActivity(Activity.watching("for " + PopularHandler.ratio + " net upvotes"));
