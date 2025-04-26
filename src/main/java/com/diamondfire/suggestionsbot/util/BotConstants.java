@@ -3,9 +3,10 @@ package com.diamondfire.suggestionsbot.util;
 public interface BotConstants {
 
     String PREFIX = "?";
-
-    // The ratio cannot go lower than this.
-    int RATIO = 24;
+    
+    // The upvote ratio cannot go lower than MIN or higher than MAX.
+    int MIN_RATIO = 20;
+    int MAX_RATIO = 35;
 
     long UPVOTE = 612568094962876416L;
     long DOWNVOTE = 612568084414201856L;
