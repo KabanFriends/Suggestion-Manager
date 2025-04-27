@@ -3,7 +3,7 @@ package com.diamondfire.suggestionsbot.suggestions.channels.channel.issue;
 public class AlphaIssue extends IssueChannel {
     @Override
     public String getName() {
-        return "Test Issue";
+        return "Alpha Issue";
     }
 
     @Override
