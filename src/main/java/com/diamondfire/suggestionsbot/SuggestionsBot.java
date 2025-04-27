@@ -1,5 +1,6 @@
 package com.diamondfire.suggestionsbot;
 
+import com.diamondfire.suggestionsbot.database.ConnectionProvider;
 import com.diamondfire.suggestionsbot.instance.InstanceHandler;
 import com.diamondfire.suggestionsbot.util.Config;
 
@@ -11,6 +12,7 @@ public class SuggestionsBot {
 
     public static void main(String[] args) throws LoginException, InterruptedException {
         Config.compileConfig();
+        ConnectionProvider.setup();
         instance.startup();
     }
 

@@ -1,5 +1,6 @@
 package com.diamondfire.suggestionsbot.suggestions.channels;
 
+import com.diamondfire.suggestionsbot.suggestions.channels.channel.issue.AlphaIssue;
 import com.diamondfire.suggestionsbot.suggestions.channels.channel.suggestion.CodeChannel;
 import com.diamondfire.suggestionsbot.suggestions.channels.channel.suggestion.GeneralChannel;
 import com.diamondfire.suggestionsbot.suggestions.channels.channel.issue.BetaIssue;
@@ -14,7 +15,7 @@ public class ChannelHandler {
         register(new GeneralChannel());
         register(new CodeChannel());
         register(new ProductionIssue());
-        register(new BetaIssue());
+        register(new AlphaIssue());
     }
 
     private static void register(Channel channel) {

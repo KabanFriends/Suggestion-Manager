@@ -1,6 +1,7 @@
 package com.diamondfire.suggestionsbot.instance;
 
 
+import com.diamondfire.suggestionsbot.database.ConnectionProvider;
 import com.diamondfire.suggestionsbot.suggestions.reactions.PopularHandler;
 
 import javax.security.auth.login.LoginException;
